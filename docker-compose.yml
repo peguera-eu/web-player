@@ -1,0 +1,17 @@
+services:
+  web:
+    networks:
+      - mirage
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: web-player
+    restart: on-failure
+    volumes:
+      - ./:/workspace:z
+    ports:
+      - 3002:3000
+    command: npm run dev
+networks:
+  mirage:
+    external: true
