@@ -9,6 +9,7 @@ services:
     restart: on-failure
     volumes:
       - ./:/workspace:z
+      - /workspace/node_modules
     ports:
       - 3002:3000
     command: npm run dev
