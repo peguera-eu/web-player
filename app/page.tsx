@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <div className="container-fluid">
       <div className="row">
-        <main className="col-6 offset-3 player">
+        <main className="col-6 offset-3 player text-center">
           {currentContentPlayer}
         </main>
       </div>
