@@ -12,8 +12,10 @@ export default function Home() {
   useEffect(() => {
     const socket = io('http://localhost:3000');
 
-    console.log('called useeffect');
     //Connect to websocket, read from it and set content
+    socket.on('connection', (raw) => {
+      raw.request = null;
+    });
     socket.on('content', (message) => {
       console.log(message);
       setCurrentContent(message);
