@@ -17,7 +17,6 @@ export default function Home() {
       raw.request = null;
     });
     socket.on('content', (message) => {
-      console.log(message);
       setCurrentContent(message);
     });
   });
