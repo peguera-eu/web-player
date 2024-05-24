@@ -1,3 +1,8 @@
 body{
   background: #000 !important;
+  overflow-y: hidden;
+}
+
+.fullscreen{
+  height: 100vh !important
 }

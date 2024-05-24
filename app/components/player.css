@@ -1,13 +1,10 @@
 .media-box {
   aspect-ratio: 1/1;
+  border-radius: 50% !important;
 }
 
-.image-wrapper{
-  width:80%;
-  margin:0 auto;
-  position: relative;
-  overflow: hidden;
-  border-radius: 50%;
+#video, #image {
+  height: 100vh;
 }
 
 .metadata h2, .metadata h3 {
